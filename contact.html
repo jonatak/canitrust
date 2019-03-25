@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<div class="page-header page-header-xs" style="background-image: url('{{ "/assets/img/canitrust/contact.jpg" | relative_url }}');">
+  <div class="filter"></div>
+</div>
+
+<div class="main">
+  <div class="section section-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto text-center">
+          <h1 class="title">Vous voulez me contacter ?</h1>
+          <p>Vous pouvez me contacter par email, téléphone, sur les réseaux sociaux ou encore en utilisant le formulaire de contact, n'hésitez pas à me laisser un message pour prendre rendez vous, ou simplement si vous avez des questions.</p>
+        </div>
+      </div>
+      <br />
+      <div class="row">
+          <div class="col-md-6 ml-auto mr-auto text-center">
+              <div class="card card-contact card-raised">
+                <div class="card-header header-raised header-primary text-center">
+                  <h4 class="card-title">Contact</h4>
+                </div>
+                <form role="form" name="sentMessage" id="contactForm" novalidate">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-6">
+                            <div class="info info-horizontal">
+                                <div class="icon icon-info">
+                                  <i class="nc-icon nc-badge" aria-hidden="true"></i>
+                                </div>
+                                <div class="description">
+                                  <h5 class="info-title">Information</h5>
+                                  <p> Jonathan Billaud
+                                    <br> 06 89 87 01 71
+                                    <br> contact@canitrust.fr
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="info info-horizontal">
+                            <div class="icon icon-danger">
+                              <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                            </div>
+                            <div class="description">
+                              <h5 class="info-title">Où me trouver</h5>
+                              <p> 3 Route de Bransles
+                                <br> 45210 Ferrières en Gatinais
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="control-label">Nom Complet</label>
+                          <input type="text" id="name" name="name" class="form-control" placeholder="Votre nom et prénom">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label class="control-label">Email</label>
+                          <input type="email" id="email" name="email" class="form-control" placeholder="Email" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label">Votre Message</label>
+                      <textarea name="message" class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                      </div>
+                      <div class="col-md-6">
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-rose pull-right">Envoyer</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

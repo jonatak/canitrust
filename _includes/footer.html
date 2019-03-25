@@ -1,0 +1,79 @@
+<footer class="footer footer-black footer-white ">
+  <div class="container">
+    <div class="row">
+      <nav class="footer-nav">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/JonathanCaniTrust" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.cynochiot.fr" target="_blank">CynoChiot</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="credits ml-auto">
+        <span class="copyright">
+          ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>, made with <i class="fa fa-heart heart"></i> by Jonathan Billaud
+        </span>
+
+        <span> - Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="{{ "/assets/js/core/jquery.min.js" | relative_url }}" type="text/javascript"></script>
+<script src="{{ "/assets/js/core/popper.min.js" | relative_url }}" type="text/javascript"></script>
+<script src="{{ "/assets/js/core/bootstrap.min.js" | relative_url }}" type="text/javascript"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script src="{{ "/assets/js/plugins/bootstrap-switch.js" | relative_url }}"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="{{ "/assets/js/plugins/nouislider.min.js" | relative_url }}" type="text/javascript"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script src="{{ "/assets/js/plugins/moment.min.js" | relative_url }}"></script>
+<!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
+<script src="{{ "/assets/js/plugins/bootstrap-tagsinput.js" | relative_url }}"></script>
+<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
+<script src="{{ "/assets/js/plugins/bootstrap-selectpicker.js" | relative_url }}" type="text/javascript"></script>
+<!--	Plugin for Datetimepicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
+<script src="{{ "/assets/js/plugins/bootstrap-datetimepicker.js" | relative_url }}" type="text/javascript"></script>
+<!--  Vertical nav - dots -->
+<!--  Photoswipe files -->
+<script src="{{ "/assets/js/plugins/photo_swipe/photoswipe.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/plugins/photo_swipe/photoswipe-ui-default.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/plugins/photo_swipe/init-gallery.js" | relative_url }}"></script>
+<!--  for Jasny fileupload -->
+<script src="{{ "/assets/js/plugins/jasny-bootstrap.min.js" | relative_url }}"></script>
+<!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+<script src="{{ "/assets/js/paper-kit.js?v=2.2.2" | relative_url }}" type="text/javascript"></script>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFRWCv221kgKKhwQB6gRVZpbISSK4dD3M"></script>
+<!--  Plugin for presentation page - isometric cards  -->
+<script src="{{ "/assets/js/plugins/jqBootstrapValidation/jqBootstrapValidation.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/contact_me.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/plugins/presentation-page/main.js" | relative_url }}"></script>
+{% if page.name == 'index.html' %}
+<script>
+  $(document).ready(function() {
+      var myLatlng = new google.maps.LatLng(48.103731, 2.794001);
+      var mapOptions = {
+        zoom: 14,
+        center: myLatlng,
+        scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
+      }
+
+      var map = new google.maps.Map(document.getElementById("contactUsMap2"), mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: myLatlng,
+        title: "CaniTrust - Éducation Canine"
+      });
+
+      // To add the marker to the map, call setMap();
+      marker.setMap(map);
+  });
+{% endif %}
+</script>
