@@ -21,8 +21,16 @@ baseurl: "/beta" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-
+site_name: CaniTrust
 repository: "jonatak/canitrust"
+
+authors:
+  jonathan:
+    name: Jonathan Billaud
+    display_name: Jonathan
+    email: jonathan.billaud@gmail.com
+    web: https://www.canitrust.fr
+    facebook: https://www.facebook.com/JonathanCaniTrust/
 
 # Build settings
 plugins:

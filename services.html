@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Services
 ---
 
 <div class="project-4 section section-image" style="background-image: url('{{ "/assets/img/canitrust/services.jpg" | relative_url }}');">
@@ -7,8 +8,10 @@ layout: default
     <div class="row">
       <div class="col-md-8 ml-auto mr-auto text-center">
         <h1 class="title">Mes Services</h1>
-        <h5 class="description">Tous mes services individuel sont au tarif unique de 40 &euro; de l'heure. Les séances collective sont facturé en moyenne à 20 &euro; selon l'activité et les balades collectives ne coûte seulement que 10 &euro;.
-            <br /> Des frais de déplacement, calculé avec mappy, pourrons être facturé si l'invervention de passe à plus de 30 km de mon domicile.</h5>
+        <h5 class="description">
+            J'interviens dans un rayon de 50km autour de Ferrières-en-Gâtinais, ce qui comprend Fontainebleau, Nemours, Montargis, Amilly ...
+            <br /> Des frais de déplacement, calculés avec mappy, pourront être facturés si l'intervention se passe à plus de 30 km de mon domicile.
+        </h5>
       </div>
     </div>
     <div class="space-top"></div>
@@ -19,15 +22,16 @@ layout: default
       </div>
       <div class="col-md-5 mr-auto">
         <div class="card card-plain">
-          <div class="card-body">
-            <h6 class="card-category">Séance individuel</h6>
+          <div class="card-body" id="bilan_comportemental">
+            <h6 class="card-category">Séance individuelle</h6>
             <h3 class="card-title">Bilan Comportemental</h3>
-            <p class="card-description">Le Bilan comportemental est un première entretiens qui dure de 1h30 à 2h. Durant cette entretiens nous ferons l'état des lieux de vos besoin et de vos attentes concernant l'éducation de votre chien et des possibles problèmes de comportement.
-            À l'issue de celui-ci nous déciderons ensemble du nombre de séance nécéssaire pour l'éducation, un plan d'action et un résumé de la séance vous sera également envoyé par email.</p>
+            <p class="card-description">Le bilan comportemental est un premier entretien qui dure de 1h30 à 2h. Durant cet entretien nous ferons l'état des lieux de vos besoins et de vos attentes concernant l'éducation de votre chien et des possibles problèmes de comportement.
+                                        À l'issue de celui-ci nous déciderons ensemble du nombre de séances nécessaires pour l'éducation. Un plan d'action et un résumé de la séance vous seront également envoyés par email.</p>
             <div class="card-footer">
-                <a href="{{ site.url | append: "/contact.html" }}" class="btn btn-link btn-neutral">
-                  <i class="fa fa-book" aria-hidden="true"></i> Prendre rendez vous
+                <a href="{{ "/contact.html" | relative_url }}" class="btn btn-link btn-neutral">
+                  <i class="fa fa-book" aria-hidden="true"></i> Prendre rendez-vous
                 </a>
+                <span class="badge badge-pill badge-danger">40&euro;/H</span>
             </div>
           </div>
         </div>
@@ -39,14 +43,15 @@ layout: default
     <div class="row">
       <div class="col-md-5 ml-auto">
         <div class="card card-plain">
-          <div class="card-body">
-            <h6 class="card-category">Séance individuel</h6>
+          <div class="card-body" id="cours_education">
+            <h6 class="card-category">Séance individuelle</h6>
             <h3 class="card-title">Cours d'éducation</h3>
-            <p class="card-description">Une séance pendant lasquel nous pouvons aborder diférent thème tels que l'éducation de base, le clicker training, la marche en laisse ou tout autre thème que vous voulez travailler avec votre chien.</p>
+            <p class="card-description">Une séance pendant laquelle nous pouvons aborder différents thèmes tels que l'éducation de base, le clicker training, la marche en laisse ou tout autre sujet que vous voulez travailler avec votre chien, tant que cela reste dans le respect mental, émotionnel et physique de votre chien.</p>
             <div class="card-footer">
-              <a href="{{ site.url | append: "/contact.html" }}" class="btn btn-link btn-neutral">
-                <i class="fa fa-book" aria-hidden="true"></i> Prendre rendez vous
+              <a href="{{ "/contact.html" | relative_url }}" class="btn btn-link btn-neutral">
+                <i class="fa fa-book" aria-hidden="true"></i> Prendre rendez-vous
               </a>
+              <span class="badge badge-pill badge-danger">40&euro;/H</span>
             </div>
           </div>
         </div>
@@ -67,13 +72,14 @@ layout: default
       <div class="col-md-5 mr-auto">
         <div class="card card-plain">
           <div class="card-body">
-            <h6 class="card-category">Séance individuel</h6>
+            <h6 class="card-category">Séance individuelle</h6>
             <h3 class="card-title">Accueil du chiot</h3>
-            <p class="card-description">Nous verrons pendant cette séance tout les pré-requis pour l'accueil d'un chiot: le matériel necessaire, les premiers éducatif, comment créer la relation, l'apprentissage de la propreté ou encore la solitude. Nous pouvons également abordé des questions tels que comment choisir un chiot? quels râces ou quels éleveur choisir?</p>
+            <p class="card-description">Nous verrons pendant cette séance tous les prérequis pour l'accueil d'un chiot : le matériel nécessaire, les premiers éducatifs, comment créer la relation, l'apprentissage de la propreté ou encore la solitude. Nous pouvons également aborder des questions telles que comment choisir un chiot ? Quelles races ou quels éleveurs choisir ?</p>
             <div class="card-footer">
-              <a href="{{ site.url | append: "/contact.html" }}" class="btn btn-link btn-neutral">
-                <i class="fa fa-book" aria-hidden="true"></i> Prendre rendez vous
+              <a href="{{ "/contact.html" | relative_url }}" class="btn btn-link btn-neutral">
+                <i class="fa fa-book" aria-hidden="true"></i> Prendre rendez-vous
               </a>
+              <span class="badge badge-pill badge-danger">40&euro;/H</span>
             </div>
           </div>
         </div>
@@ -88,11 +94,13 @@ layout: default
           <div class="card-body">
             <h6 class="card-category">Cours Collectif</h6>
             <h3 class="card-title">Maternelle pour chiot</h3>
-            <p class="card-description">C'est une classe collective pour socialiser votre chiot, lui apprendre les éducatif de base, la marche en laisse, et également une bonne introduction à l'éducation positive.</p>
+            <p class="card-description">C'est une classe collective pour socialiser votre chiot, lui apprendre les éducatifs de base, la marche en laisse, et également une bonne introduction à l'éducation positive.</p>
             <div class="card-footer">
               <a href="https://www.cynochiot.fr" class="btn btn-link btn-neutral">
-                <i class="fa fa-book" aria-hidden="true"></i> Plus d'information
+                <i class="fa fa-book" aria-hidden="true"></i> Plus d'informations
               </a>
+              <span class="badge badge-pill badge-danger">20&euro; la Séance</span>
+              <span class="badge badge-pill badge-danger">90&euro; Forfait</span>
             </div>
           </div>
         </div>
@@ -114,12 +122,13 @@ layout: default
         <div class="card card-plain">
           <div class="card-body">
             <h6 class="card-category">Cours Collectif</h6>
-            <h3 class="card-title">Ballade collective</h3>
-            <p class="card-description">Pour le prix de 10 euros profité d'une balade collective tout en détente pour vous et votre compagnon, balade encadré par deux éducateur professionnel afin d'assurer la sécurité et le bien être de tout les participants.</p>
+            <h3 class="card-title">Balade collective</h3>
+            <p class="card-description">Pour le prix de 10 euros profitez d'une balade collective tout en détente pour vous et votre compagnon, balade encadrée par deux éducateurs professionnels afin d'assurer la sécurité et le bien-être de tous les participants.</p>
             <div class="card-footer">
-              <a href="{{ site.url | append: "/contact.html" }}" class="btn btn-link btn-neutral">
+              <a href="{{ "/contact.html" | relative_url }}" class="btn btn-link btn-neutral">
                 <i class="fa fa-book" aria-hidden="true"></i> Vous inscrire
               </a>
+              <span class="badge badge-pill badge-danger">10&euro;</span>
             </div>
           </div>
         </div>
@@ -131,14 +140,15 @@ layout: default
     <div class="row">
       <div class="col-md-5 ml-auto">
         <div class="card card-plain">
-          <div class="card-body">
+          <div class="card-body" id="ateliers">
             <h6 class="card-category">Cours Collectif</h6>
-            <h3 class="card-title">Atelier</h3>
-            <p class="card-description">Des ateliers sur des thèmes varié comme la marche en laisse, la recherche de personne, le clicker training et encore bien plus! Suivez nous sur facebook pour avoir toutes les informations sur les évènements à venir.</p>
+            <h3 class="card-title">Ateliers</h3>
+            <p class="card-description">Des ateliers sur des thèmes variés comme la marche en laisse, la recherche de personne, le clicker training et encore bien plus !  Suivez-nous sur Facebook pour avoir toutes les informations sur les évènements à venir.</p>
             <div class="card-footer">
               <a href="https://www.facebook.com/JonathanCaniTrust/" class="btn btn-link btn-neutral">
                 <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
               </a>
+              <span class="badge badge-pill badge-danger">30&euro;</span>
             </div>
           </div>
         </div>
