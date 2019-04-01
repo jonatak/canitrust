@@ -3,15 +3,15 @@ layout: default
 title: Éducation et comportement canin
 ---
 
-<div class="page-header" data-parallax="true" style="background-image: url('{{ "/assets/img/canitrust/landing.jpg" | relative_url }}');">
+<div id="headers" class="page-header" data-parallax="true" style="background-image: url('{{ "/assets/img/canitrust/landing.jpg" | relative_url }}');">
   <div class="filter"></div>
   <div class="content-center">
     <div class="container">
       <div class="motto text-left">
         <h1 class="title">CaniTrust - <span class="text-success">Éducation Canine</span></h1>
-        <h3 class="description">Educateur Canin et Comportementaliste dans le <span class="text-success">Loiret</span> et le sud <span class="text-success">Seine et Marne</span>.</h3>
+        <h3 class="description">Educateur et Comportementaliste canin dans le <span class="text-success">Loiret</span> et le sud <span class="text-success">Seine et Marne</span>.</h3>
         <br />
-        <a href="#service" type="button" class="btn btn-success btn-round">En savoir plus</a>
+        <a href="{{ "/contact.html#contact" | relative_url }}" class="btn btn-outline-neutral btn-round">Me Contacter</a>
         <a class="btn btn-just-icon btn-facebook" href="https://www.facebook.com/JonathanCaniTrust" target="_blank">
             <i class="fa fa-facebook" aria-hidden="true"></i>
         </a>
@@ -22,7 +22,7 @@ title: Éducation et comportement canin
     </div>
   </div>
 </div>
-<div id="service" class="wrapper">
+<div id="services" class="wrapper">
   <div class="section text-center landing-section">
     <div class="container">
       <div class="row">
@@ -89,7 +89,7 @@ Plusieurs activités et services vous sont proposés.
       </div>
     </div>
   </div>
-  <div class="section section-dark text-center landing-section">
+  <div id="about-us" class="section section-dark text-center landing-section">
     <div class="container">
       <h2 class="title">Qui suis-je ?</h2>
       <div class="card card-profile card-plain">
@@ -139,7 +139,7 @@ Plusieurs activités et services vous sont proposés.
                         <h5 class="info-title">Pour m'appeler</h5>
                         <p> Jonathan Billaud
                           <br> 06 89 87 01 71
-                          <br> contact@canitrust.fr
+                          <br> <span class="text-danger">contact@canitrust.fr</span>
                         </p>
                       </div>
                     </div>
@@ -191,3 +191,25 @@ Plusieurs activités et services vous sont proposés.
       </div>
       </div>
   </div>
+  <nav id="cd-vertical-nav">
+      <ul>
+        <li>
+          <a href="#services" data-number="1">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about-us" data-number="2">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Qui suis-je?</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" data-number="3">
+            <span class="cd-dot"></span>
+            <span class="cd-label">Me contacter</span>
+          </a>
+        </li>
+      </ul>
+   </nav>

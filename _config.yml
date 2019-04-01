@@ -16,13 +16,16 @@
 title: Canitrust - Éducation et Comportement Canin
 email: "contact@canitrust.fr"
 description: >- # this means to ignore newlines until "baseurl:"
-  Éducation et comportement canin dans le sud Seine et Marne, le Loiret et l'Yonne.
-baseurl: "/beta" # the subpath of your site, e.g. /blog
-#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Votre éducateur canin et comportementaliste dans le sud Seine et Marne, le Loiret et l'Yonne.
+#baseurl: "/beta" # the subpath of your site, e.g. /blog
+url: "https://www.canitrust.fr" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 site_name: CaniTrust
+lang: fr_FR
 repository: "jonatak/canitrust"
+
+logo: /assets/img/canitrust/logo/canitrust.png
 
 authors:
   jonathan:

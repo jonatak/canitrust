@@ -1,53 +1,60 @@
 <footer class="footer footer-black footer-big">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-9 ml-auto mr-auto">
+        <div class="col-md-4 col-sm-4 ml-auto mr-auto">
+          <div class="logo text-center">
+            <img src="{{ "/assets/img/canitrust/logo/logo_text_sans_cadre.png" | relative_url }}" width="150" />
+            <p> 06 89 87 01 71
+                <br/> contact@canitrust.fr
+                <br/>
+                <a href="https://www.facebook.com/JonathanCaniTrust" target="_blank" class="btn btn-just-icon btn-link btn-facebook">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/jonathan_canitrust/" target="_blank" class="btn btn-just-icon btn-link btn-instagram">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 offset-md-2 col-sm-8">
           <div class="links">
-            <ul class="uppercase-links">
-              <li>
-                <a href="{{ "/index.html" | relative_url }}">
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a href="{{ "/presentation.html" | relative_url }}">
-                  Présentation
-                </a>
-              </li>
-              <li>
-                <a href="{{ "/services.html" | relative_url }}">
-                  Services et Tarifs
-                </a>
-              </li>
-              <li>
-                <a href="{{ "/contact.html" | relative_url  }}">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="https://www.cynochiot.fr">
-                  Cynochiot
-                </a>
-              </li>
+            <ul>
+                <li>
+                  <a href="{{ "/index.html" | relative_url }}">
+                    Accueil
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ "/presentation.html" | relative_url }}">
+                    Présentation
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ "/services.html" | relative_url }}">
+                    Services et Tarifs
+                  </a>
+                </li>
+                <li>
+                  <a href="{{ "/contact.html" | relative_url  }}">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.cynochiot.fr">
+                    Cynochiot
+                  </a>
+                </li>
             </ul>
             <hr>
             <div class="copyright">
-              ©
-              <script>
-                document.write(new Date().getFullYear())
-              </script> made with <i class="fa fa-heart heart"></i> by Jonathan Billaud<br />
-              Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+              <div class="pull-left">
+                ©
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>, made with <i class="fa fa-heart heart"></i> by CaniTrust<br />
+                Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-2">
-          <div class="social-area">
-            <a href="https://www.facebook.com/JonathanCaniTrust" target="_blank" class="btn btn-round btn-just-icon btn-facebook facebook-sharrre">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.instagram.com/jonathan_canitrust/" target="_blank" class="btn btn-just-icon btn-round btn-instagram instagram-sharrre">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
           </div>
         </div>
       </div>
@@ -57,25 +64,10 @@
 <script src="{{ "/assets/js/core/jquery.min.js" | relative_url }}" type="text/javascript"></script>
 <script src="{{ "/assets/js/core/popper.min.js" | relative_url }}" type="text/javascript"></script>
 <script src="{{ "/assets/js/core/bootstrap.min.js" | relative_url }}" type="text/javascript"></script>
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="{{ "/assets/js/plugins/bootstrap-switch.js" | relative_url }}"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="{{ "/assets/js/plugins/nouislider.min.js" | relative_url }}" type="text/javascript"></script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script src="{{ "/assets/js/plugins/moment.min.js" | relative_url }}"></script>
 <!--	Plugin for Tags, full documentation here: https://github.com/bootstrap-tagsinput/bootstrap-tagsinputs  -->
 <script src="{{ "/assets/js/plugins/bootstrap-tagsinput.js" | relative_url }}"></script>
-<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select -->
-<script src="{{ "/assets/js/plugins/bootstrap-selectpicker.js" | relative_url }}" type="text/javascript"></script>
-<!--	Plugin for Datetimepicker, full documentation here: https://eonasdan.github.io/bootstrap-datetimepicker/ -->
-<script src="{{ "/assets/js/plugins/bootstrap-datetimepicker.js" | relative_url }}" type="text/javascript"></script>
 <!--  Vertical nav - dots -->
-<!--  Photoswipe files -->
-<script src="{{ "/assets/js/plugins/photo_swipe/photoswipe.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/plugins/photo_swipe/photoswipe-ui-default.min.js" | relative_url }}"></script>
-<script src="{{ "/assets/js/plugins/photo_swipe/init-gallery.js" | relative_url }}"></script>
-<!--  for Jasny fileupload -->
-<script src="{{ "/assets/js/plugins/jasny-bootstrap.min.js" | relative_url }}"></script>
+<script src="{{ "/assets/demo/vertical-nav.js" | relative_url }}" type="text/javascript"></script>
 <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
 <script src="{{ "/assets/js/paper-kit.js?v=2.2.2" | relative_url }}" type="text/javascript"></script>
 

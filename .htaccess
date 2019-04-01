@@ -1,0 +1,10 @@
+#eviter le mixted content
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+
+#force la redirection en HTTPS
+RewriteEngine on
+RewriteCond %{SERVER_PORT} 80 [OR]
+RewriteCond %{HTTP_HOST}  ^(canitrust)\.fr$ [NC]
+RewriteRule ^(.*) https://www.canitrust.fr/$1 [QSA,L,R=301]
+
+Options -Indexes
