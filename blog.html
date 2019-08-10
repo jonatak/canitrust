@@ -1,0 +1,66 @@
+---
+layout: default
+title: Le Blog
+---
+
+<div id="headers" class="page-header" data-parallax="true" style="background-image: url('{{ "/assets/img/canitrust/molly.jpg" | relative_url }}');">
+  <div class="filter"></div>
+  <div class="content-center">
+    <div class="container">
+      <div class="motto text-left">
+        <h1 class="title">CaniTrust - <span class="text-danger">Le Blog</span></h1>
+        <h3 class="description">Des articles sur <span class="text-danger">l'éducation</span> et du <span class="text-danger">comportement</span> canin.</h3>
+        <br />
+        <a href="{{ "/contact.html#contact" | relative_url }}" class="btn btn-outline-neutral btn-round">Me Contacter</a>
+        <a class="btn btn-just-icon btn-facebook" href="https://www.facebook.com/JonathanCaniTrust" target="_blank">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn-just-icon btn-instagram" href="https://www.instagram.com/jonathan_canitrust/" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Navbar -->
+ <div class="wrapper">
+   <div class="main">
+     <div class="section section-gray">
+       <div class="container">
+         {% for post in site.posts %}
+         <div class="article">
+           <div class="row">
+             <div class="col-md-8 ml-auto mr-auto">
+               <div class="card card-blog card-plain text-center">
+                 <div class="card-image">
+                   <a href="{{ post.url | relative_url }}">
+                     <img class="img img-raised" src="{{ post.image | relative_url}}">
+                   </a>
+                 </div>
+                 <div class="card-body">
+                   <div class="card-category">
+                     {% for tag in post.tags %}
+                     <span class="badge badge-primary main-tag">{{ tag }}</span>
+                     {% endfor %}
+                   </div>
+                   <a href="{{ post.url | relative_url }}">
+                     <h3 class="card-title">{{ post.title }}</h3>
+                   </a>
+                   <div class="card-description">
+                     <p>{{ post.excerpt }}</p>
+                   </div>
+                 </div>
+                 <a class="btn btn-danger btn-round btn-sm" href="{{ post.url | relative_url }}">Lire l'article</a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <hr>
+         <br/>
+         <br/>
+        {% endfor %}
+        </div>
+    </div>
+  </div>
+</div>
